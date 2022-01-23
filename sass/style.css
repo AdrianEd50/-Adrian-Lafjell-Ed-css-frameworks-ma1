@@ -15,6 +15,14 @@ body {
   background: #e5e5e5;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,8 +126,8 @@ footer {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .grid__item {
